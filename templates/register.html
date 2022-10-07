@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Patient</title>
+</head>
+<body>
+<div align="center">
+        <div align="center" class="border">
+             <div class="header">
+                 <h1> Register Patient Details</h1>
+             </div>
+        </div>
+</div>
+<div align="center">
+        <div align="center" class="border">
+             <div class="header">
+                 <form method="post" action="/register">
+                    <input type ="text" name="name" placeholder="Enter user Name"> </br></br>
+                    <input type ="text" name="phone_number" placeholder="Enter phone number"></br></br>
+                    <input type ="text" name="age" placeholder="Enter age"></br></br>
+                    <input type ="text" name="bed_type" placeholder="Enter bed_type"></br></br>
+                    <input type ="text" name="address" placeholder="Enter address"></br></br>
+                    <input type ="text" name="state" placeholder="Enter state"></br></br>
+                    <input type ="text" name="city" placeholder="Enter city"></br></br>
+                    <input type ="text" name="patient_status" placeholder="Enter patient_status"></br></br>
+                    <button>Submit</button>
+                </form>
+             </div>
+        </div>
+</div>
+    {% if flag %}
+    <h3>User added </h3>
+    {% endif %}
+</body>
+</html>

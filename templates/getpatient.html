@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Get Patient list</title>
+</head>
+<body>
+    <div align="center">
+        <div align="center" class="border">
+             <div class="header">
+                 <h1 class="word">Deatils of patient</h1>
+             </div>
+        </div>
+    </div>
+</body>
+<div align="center">
+        <div align="center" class="border">
+             <div class="header">
+                 <table>
+                 <tr>
+                    <th>name</th>
+                    <th>phone_number</th>
+                    <th>age</th>
+                    <th>bed_type</th>
+                    <th>address</th>
+                    <th>state</th>
+                    <th>city</th>
+                    <th>patient_status</th>
+                </tr>
+{% for name in data %}
+                <tr>
+                    <td>{{name.name}}</td>
+                    <td>{{name.phone_number}}</td>
+                    <td>{{name.age}}</td>
+                    <td>{{name.bed_type}}</td>
+                    <td>{{name.address}}</td>
+                    <td>{{name.state}}</td>
+                    <td>{{name.city}}</td>
+                    <td>{{name.patient_status}}</td>
+                </tr>
+{% endfor %}
+                </table>
+             </div>
+        </div>
+</div>
+
+</html>
